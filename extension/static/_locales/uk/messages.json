@@ -1,0 +1,17 @@
+{
+  "appName": {
+    "message": "Сенсорна Доступність"
+  },
+  "appDescription": {
+    "message": "Інструменти сенсорної доступності"
+  },
+  "grayscale": {
+    "message": "Градації сірого"
+  },
+  "dyslexic": {
+    "message": "Шрифт Dyslexic"
+  },
+  "bionic": {
+    "message": "Біонічне читання"
+  }
+}

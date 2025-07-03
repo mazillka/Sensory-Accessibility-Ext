@@ -1,0 +1,17 @@
+{
+  "appName": {
+    "message": "Sensory Accessibility"
+  },
+  "appDescription": {
+    "message": "Sensory accessibility tools"
+  },
+  "grayscale": {
+    "message": "Grayscale"
+  },
+  "dyslexic": {
+    "message": "Dyslexic Font"
+  },
+  "bionic": {
+    "message": "Bionic Reading"
+  }
+}

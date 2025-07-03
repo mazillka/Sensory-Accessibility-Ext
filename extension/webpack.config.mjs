@@ -17,7 +17,7 @@ export default (env, argv) => {
 		{
 			mode: argv.mode || "development",
 			entry: {
-				contentscript: "./src/contentscript.ts",
+				contentScript: "./src/contentScript.ts",
 				background: "./src/background.ts",
 				popup: "./src/popup.ts",
 				options: "./src/options.ts",
@@ -104,18 +104,21 @@ export default (env, argv) => {
 				new CopyWebpackPlugin({
 					patterns: [
 						{ from: "./static/icons", to: "icons" },
+						{ from: "./static/fonts", to: "fonts" },
+						{ from: "./static/_locales", to: "_locales" },
+						{ from: "./static/html", to: "fonts" },
 						{ from: "./manifest.json", to: "manifest.json" },
 					],
 				}),
 				new HtmlWebPackPlugin({
 					template: "./static/html/options.html",
 					filename: "./options.html",
-					excludeChunks: ["background", "contentscript", "popup"],
+					excludeChunks: ["background", "content-script", "popup"],
 				}),
 				new HtmlWebPackPlugin({
 					template: "./static/html/popup.html",
 					filename: "./popup.html",
-					excludeChunks: ["background", "contentscript", "options"],
+					excludeChunks: ["background", "content-script", "options"],
 				}),
 				new MiniCssExtractPlugin({
 					filename: "css/[name].css",

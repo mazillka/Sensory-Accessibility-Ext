@@ -5,7 +5,7 @@
 	"version": "1.0.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mazillka/Extension-Template"
+		"url": "https://github.com/mazillka/Sensory-Accessibility-Ext"
 	},
 	"scripts": {
 		"build-dev": "webpack --mode development",
